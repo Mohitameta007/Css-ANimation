@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .bigbox{
+            border: 3px solid grey;
+            height: 550px;
+            width: 430px;
+            margin-left: 500px;
+            margin-top: 60px; 
+            background-color: black;
+            box-shadow:  inset 15px 15px 60px rgba(230, 229, 229, 0.2),  
+            15px 15px 60px rgba(222, 221, 221, 0.3);
+
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+            border: 0px solid grey;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            
+        }
+        .box1{
+            background-color: red;
+            margin-top: 30px;
+            animation: moveBoxes 3s infinite alternate linear;
+        }
+        .box2{
+            background-color: orange;
+            margin-top: 30px;
+            animation: moveBoxes 3.1s infinite alternate linear;
+        }
+        .box3{
+            background-color: yellow;
+            margin-top: 30px;
+            animation: moveBoxes 3.2s infinite alternate linear;
+        }
+        .box4{
+            background-color: green;
+            margin-top: 30px;
+            animation: moveBoxes 3.3s infinite alternate linear;
+        }
+        .box5{
+            background-color: blue;
+            margin-top: 30px;
+            animation: moveBoxes 3.4s infinite alternate linear;
+        }
+        .box6{
+            background-color: purple;
+            margin-top: 30px;
+            animation: moveBoxes 3.5s infinite alternate linear;
+        }
+        .box7{
+            background-color: pink;
+            margin-top: 30px;
+            animation: moveBoxes 3.6s infinite alternate linear;
+        }
+        .box8{
+            background-color:white;
+            margin-top: 30px;
+            animation: moveBoxes 3.7s infinite alternate linear;
+        }
+        @keyframes moveBoxes {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(400px) ;}
+            100% { transform: translateX(0); } 
+}
+
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+    </div>
+    
+</body>
+</html>
